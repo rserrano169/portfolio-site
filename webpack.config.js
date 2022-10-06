@@ -24,8 +24,17 @@ module.exports = (env) => {
         {
           test: /\.(sc|sa|c)ss$/,
           use: [
+            'style-loader',
             'css-loader',
             'sass-loader'
+          ],
+        },
+        {
+          test: /\.(png|jpe?g|gif|pdf)$/i,
+          use: [
+            {
+              loader: 'file-loader',
+            },
           ],
         },
       ],

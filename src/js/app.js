@@ -1,7 +1,8 @@
 import "../styles/index.sass";
+
 import React from 'react';
-import { Component } from 'react';
 import ReactDOM from 'react-dom/client';
+import { Component } from 'react';
 
 import Header from '../components/Header.jsx';
 import Resume from '../components/Resume.jsx';
@@ -34,6 +35,14 @@ class App extends Component {
         style={this.state.style}
       >
         <Header />
+        <Section>
+          <TextBlock text={this.state.data.textBlocks[0]}/>
+          <Resume />
+        </Section>
+        <Section>
+          <TextBlock text={this.state.data.textBlocks[1]}/>
+          <Resume />
+        </Section>
         <Section>
           <TextBlock text={this.state.data.textBlocks[2]}/>
           <Resume />

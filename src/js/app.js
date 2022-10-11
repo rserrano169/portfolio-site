@@ -22,8 +22,8 @@ class Section extends Component {
   render() {
     return(
       <div style={this.state.style}>
-        <TextBlock text={this.state.text}/>
-        <Resume />
+        {this.props.children[0]}
+        {this.props.children[1]}
       </div>
     );
   }
@@ -129,7 +129,10 @@ class App extends Component {
         style={this.state.style}
       >
         <Header />
-        <Section text={this.state.data.textBlocks[2]}/>
+        <Section>
+          <TextBlock text={this.state.data.textBlocks[2]}/>
+          <Resume />
+        </Section>
       </div>
     );
   }

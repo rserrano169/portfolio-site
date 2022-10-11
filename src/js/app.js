@@ -13,6 +13,7 @@ class Section extends Component {
         alignItems: 'center',
         display: 'flex',
         justifyContent: 'center',
+        flexDirection: 'column',
       },
       text: props.text,
     };
@@ -68,7 +69,7 @@ class TextBlock extends Component {
     super(props);
     this.state = {
       style: {
-        fontSize: 30,
+        fontSize: 22,
         padding: 20,
         width: '50%',
       },

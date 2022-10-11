@@ -1,7 +1,7 @@
 {
-  "name": "data_generator",
+  "name": "portfolio_site",
   "version": "1.0.0",
-  "description": "generates data",
+  "description": "portfolio site",
   "main": "src/js/app.js",
   "scripts": {
     "build-dev": "webpack --mode development",

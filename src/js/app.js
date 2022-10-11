@@ -2,106 +2,11 @@ import "../styles/index.sass";
 import React from 'react';
 import { Component } from 'react';
 import ReactDOM from 'react-dom/client';
-import resumePdf from '../assets/Resume_Raul_Serrano.pdf';
-import resumePng from '../assets/Resume_Raul_Serrano.png';
 
-class Section extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      style: {
-        alignItems: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-      },
-      text: props.text,
-    };
-  }
-
-  render() {
-    return(
-      <div style={this.state.style}>
-        {this.props.children[0]}
-        {this.props.children[1]}
-      </div>
-    );
-  }
-}
-
-class Resume extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      style: {
-        span: {
-          padding: 20,
-          width: '50%',
-        },
-        img: {
-          maxWidth: '100%',
-        },
-      },
-    };
-  }
-
-  render() {
-    return (
-      <span style={this.state.style.span}>
-        <a
-          href={resumePdf}
-          target="_blank"
-        >
-          <img
-            alt="Resume PDF"
-            src={resumePng}
-            style={this.state.style.img}
-          >
-          </img>
-        </a>
-      </span>
-    );
-  }
-}
-
-class TextBlock extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      style: {
-        fontSize: 22,
-        padding: 20,
-        width: '50%',
-      },
-      text: this.props.text,
-    };
-  }
-
-  render() {
-    return(
-      <div style={this.state.style}>{this.state.text}</div>
-    );
-  }
-}
-
-class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      style: {
-        fontSize: 40,
-        padding: 20,
-        textAlign: 'center',
-      },
-    };
-  }
-
-  render() {
-    return (
-      <header style={this.state.style}>Raul Serrano</header>
-    );
-  }
-}
+import Header from '../components/Header.jsx';
+import Resume from '../components/Resume.jsx';
+import Section from '../components/Section.jsx';
+import TextBlock from '../components/TextBlock.jsx';
 
 class App extends Component {
   constructor(props) {

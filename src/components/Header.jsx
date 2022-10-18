@@ -5,7 +5,7 @@ class Header extends Component {
     super(props);
     this.state = {
       style: {
-        fontSize: 40,
+        fontSize: 45,
         padding: 20,
         textAlign: 'center',
       },

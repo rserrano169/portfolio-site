@@ -5,9 +5,12 @@ import ReactDOM from 'react-dom/client';
 import { Component } from 'react';
 
 import Header from '../components/Header.jsx';
+import Icon from '../components/Icon.jsx';
 import Resume from '../components/Resume.jsx';
 import Section from '../components/Section.jsx';
 import TextBlock from '../components/TextBlock.jsx';
+
+import headshot from '../assets/img/headshot.jpg';
 
 class App extends Component {
   constructor(props) {
@@ -34,6 +37,7 @@ class App extends Component {
         id="main"
         style={this.state.style}
       >
+        <Icon url={headshot} alt={'headshot-icon'}/>
         <Header />
         <Section>
           <TextBlock text={this.state.data.textBlocks[0]}/>

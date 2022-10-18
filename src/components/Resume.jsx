@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-import resumePdf from "../assets/Resume_Raul_Serrano.pdf";
-import resumePng from "../assets/Resume_Raul_Serrano.png";
+import resumePdf from "../assets/pdf/Resume_Raul_Serrano.pdf";
+import resumePng from "../assets/img/Resume_Raul_Serrano.png";
 
 class Resume extends Component {
   constructor(props) {

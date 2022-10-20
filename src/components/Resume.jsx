@@ -7,12 +7,13 @@ class Resume extends Component {
     super(props);
     this.state = {
       style: {
-        span: {
-          padding: 20,
-          width: '50%',
+        div: {
+          paddingTop: 30,
+          margin: 'auto',
+          textAlign: 'center',
         },
         img: {
-          maxWidth: '100%',
+          width: '50%',
         },
       },
     };
@@ -20,7 +21,7 @@ class Resume extends Component {
 
   render() {
     return (
-      <span style={this.state.style.span}>
+      <div style={this.state.style.div}>
         <a
           href={resumePdf}
           target="_blank"
@@ -32,7 +33,7 @@ class Resume extends Component {
           >
           </img>
         </a>
-      </span>
+      </div>
     );
   }
 }

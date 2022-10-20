@@ -6,7 +6,8 @@ class TextBlock extends Component {
     this.state = {
       style: {
         fontSize: 22,
-        padding: 20,
+        margin: 'auto',
+        padding: '30px 10px 0 10px',
         width: '50%',
       },
       text: this.props.text,

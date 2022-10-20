@@ -29,7 +29,7 @@ class App extends Component {
               href: 'mailto: rserrano169@gmail.com',
               style: {
                 div: {
-                  paddingTop: 20,
+                  paddingTop: 18,
                   textAlign: 'center',
                 },
               },
@@ -71,7 +71,7 @@ class App extends Component {
           id: 'main',
           style: {
             height: '100%',
-            padding: 20,
+            padding: '20px 20px 50px 20px',
             width: '100%',
           },
         },

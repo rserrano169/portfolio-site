@@ -25,8 +25,32 @@ class App extends Component {
       data: {
         section: {
           bottom: {
+            email: {
+              textBlock: {
+                href: 'mailto: rserrano169@gmail.com',
+                style: {
+                  div: {
+                    paddingTop: 20,
+                    textAlign: 'center',
+                  },
+                },
+                text: 'rserrano169@gmail.com',
+              },
+            },
             header: {
               text: 'If it sounds like I might be a good fit for a role in your organization, please feel free to reach out! Hope to speak with you soon!',
+            },
+            linkedIn: {
+              textBlock: {
+                href: 'https://www.linkedin.com/in/raul-serrano-3814b17b/',
+                style: {
+                  div: {
+                    paddingTop: 0,
+                    textAlign: 'center',
+                  },
+                },
+                text: 'LinkedIn',
+              },
             },
           },
           culture: {
@@ -175,8 +199,16 @@ class App extends Component {
         <TextBlock text={section.culture.hobby.textBlock.text}/>
 
         <Header1 text={section.bottom.header.text}/>
-        {/*TODO: email link*/}
-        {/*TODO: LinkedIn linke*/}
+        <TextBlock
+          href={section.bottom.email.textBlock.href}
+          style={section.bottom.email.textBlock.style}
+          text={section.bottom.email.textBlock.text}
+        />
+        <TextBlock
+          href={section.bottom.linkedIn.textBlock.href}
+          style={section.bottom.linkedIn.textBlock.style}
+          text={section.bottom.linkedIn.textBlock.text}
+        />
       </div>
     );
   }

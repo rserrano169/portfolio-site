@@ -22,109 +22,107 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {
-        section: {
-          bottom: {
-            email: {
-              textBlock: {
-                href: 'mailto: rserrano169@gmail.com',
-                style: {
-                  div: {
-                    paddingTop: 20,
-                    textAlign: 'center',
-                  },
+      section: {
+        bottom: {
+          email: {
+            textBlock: {
+              href: 'mailto: rserrano169@gmail.com',
+              style: {
+                div: {
+                  paddingTop: 20,
+                  textAlign: 'center',
                 },
-                text: 'rserrano169@gmail.com',
               },
+              text: 'rserrano169@gmail.com',
             },
-            header: {
-              text: 'If it sounds like I might be a good fit for a role in your organization, please feel free to reach out! Hope to speak with you soon!',
-            },
-            linkedIn: {
-              textBlock: {
-                href: 'https://www.linkedin.com/in/raul-serrano-3814b17b/',
-                style: {
-                  div: {
-                    paddingTop: 0,
-                    textAlign: 'center',
-                  },
+          },
+          header: {
+            text: 'If it sounds like I might be a good fit for a role in your organization, please feel free to reach out! Hope to speak with you soon!',
+          },
+          linkedIn: {
+            textBlock: {
+              href: 'https://www.linkedin.com/in/raul-serrano-3814b17b/',
+              style: {
+                div: {
+                  paddingTop: 0,
+                  textAlign: 'center',
                 },
-                text: 'LinkedIn',
               },
+              text: 'LinkedIn',
             },
           },
-          culture: {
+        },
+        culture: {
+          header: {
+            text: 'Culture',
+          },
+          hobby: {
+            textBlock: {
+              text: 'In my free time I like to socialize with my diverse network of friends. We like to dance, game, have intense discussions, and even keep up with our marksmanship skills.',
+            },
+          },
+          usma: {
+            textBlock: {
+              text: 'I gained invaluable experience with teamwork and discipline while attending the United States Military Academy at West Point. Willingness to dive headfirst into challenging situations while maintaining quick and critical thinking, was a constant requirement at “The Point”, and has shaped who I am. I apply this enduring life skill to new challenges in my profession.',
+            },
+          },
+        },
+        personalProjects: {
+          main: {
             header: {
-              text: 'Culture',
-            },
-            hobby: {
-              textBlock: {
-                text: 'In my free time I like to socialize with my diverse network of friends. We like to dance, game, have intense discussions, and even keep up with our marksmanship skills.',
-              },
-            },
-            usma: {
-              textBlock: {
-                text: 'I gained invaluable experience with teamwork and discipline while attending the United States Military Academy at West Point. Willingness to dive headfirst into challenging situations while maintaining quick and critical thinking, was a constant requirement at “The Point”, and has shaped who I am. I apply this enduring life skill to new challenges in my profession.',
-              },
-            },
-          },
-          personalProjects: {
-            main: {
-              header: {
-                text: 'Personal Projects',
-              },
-              textBlock: {
-                text: 'Over the years, most of my development time has been spent making proprietary products for specific jobs, but I have published a couple of smaller personal projects, that I built when I was just starting out. Check them out below.',
-              },
-            },
-            hhh: {
-              header: {
-                text: 'Hungry Hungry Hippolyta',
-              },
-              href: 'https://hungryhungryhippolyta.com/',
-              icon: {
-                alt: 'Hungry Hungry Hippolyta Icon',
-                url: hhh,
-              },
-              textBlock: {
-                text: 'The first browser game I ever made',
-              },
-            },
-            hippolyta: {
-              header: {
-                text: 'Hippolyta',
-              },
-              href: 'https://github.com/rserrano169/Hippolyta',
-              icon: {
-                alt: 'Hippolyta Logo',
-                url: hippolyta,
-              },
-              textBlock: {
-                text: 'A graduation project I made while I was attending App Academy',
-              },
-            },
-          },
-          resume: {
-            header: {
-              href: resume,
-              text: 'Resume',
+              text: 'Personal Projects',
             },
             textBlock: {
-              text: 'My most recent roles are Front-end Software Engineer at Teachley, LLC and Quality Assurance Manager at Kiswe Mobile Inc. I enjoy working with others, problem solving, the challenges of meeting high standards for product quality, and improving the efficiency of production processes.',
+              text: 'Over the years, most of my development time has been spent making proprietary products for specific jobs, but I have published a couple of smaller personal projects, that I built when I was just starting out. Check them out below.',
             },
           },
-          top: {
+          hhh: {
             header: {
-              text: 'Raul Serrano',
+              text: 'Hungry Hungry Hippolyta',
             },
-            href: 'https://github.com/rserrano169',
+            href: 'https://hungryhungryhippolyta.com/',
             icon: {
-              alt: 'headshot-icon',
-              url: headshot,
+              alt: 'Hungry Hungry Hippolyta Icon',
+              url: hhh,
             },
             textBlock: {
-              text: 'I’m a software engineer with experience in JavaScript, Ruby, and Python, and frameworks such as React, Node, and Rails. I am looking to join a creative and ambitious team, where I can contribute to challenging projects, help real people, and continue to improve my skills.',
+              text: 'The first browser game I ever made',
             },
+          },
+          hippolyta: {
+            header: {
+              text: 'Hippolyta',
+            },
+            href: 'https://github.com/rserrano169/Hippolyta',
+            icon: {
+              alt: 'Hippolyta Logo',
+              url: hippolyta,
+            },
+            textBlock: {
+              text: 'A graduation project I made while I was attending App Academy',
+            },
+          },
+        },
+        resume: {
+          header: {
+            href: resume,
+            text: 'Resume',
+          },
+          textBlock: {
+            text: 'My most recent roles are Front-end Software Engineer at Teachley, LLC and Quality Assurance Manager at Kiswe Mobile Inc. I enjoy working with others, problem solving, the challenges of meeting high standards for product quality, and improving the efficiency of production processes.',
+          },
+        },
+        top: {
+          header: {
+            text: 'Raul Serrano',
+          },
+          href: 'https://github.com/rserrano169',
+          icon: {
+            alt: 'headshot-icon',
+            url: headshot,
+          },
+          textBlock: {
+            text: 'I’m a software engineer with experience in JavaScript, Ruby, and Python, and frameworks such as React, Node, and Rails. I am looking to join a creative and ambitious team, where I can contribute to challenging projects, help real people, and continue to improve my skills.',
           },
         },
       },
@@ -137,7 +135,7 @@ class App extends Component {
   }
 
   render() {
-    const section = this.state.data.section;
+    const section = this.state.section;
     
     return (
       <div

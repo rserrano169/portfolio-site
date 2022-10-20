@@ -1,11 +1,10 @@
 import React, {Component} from "react";
+import _ from "lodash";
 
 class Icon extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      alt: this.props.alt,
-      url: this.props.url,
+    this.state = _.merge({
       style: {
         container: {
           textAlign: 'center',
@@ -15,17 +14,32 @@ class Icon extends Component {
           width: 200,
         },
       },
-    };
+    }, this.props);
   }
 
   render() {
-    return (
-      <div style={this.state.style.container}>
+    let img = <img
+      alt={this.state.alt}
+      src={this.state.url}
+      style={this.state.style.img}
+    />;
+
+    if (this.state.href) {
+      img = <a
+        href={this.state.href}
+        target="_blank"
+      >
         <img
           alt={this.state.alt}
           src={this.state.url}
           style={this.state.style.img}
         />
+      </a>
+    }
+
+    return (
+      <div style={this.state.style.container}>
+        {img}
       </div>
     );
   }

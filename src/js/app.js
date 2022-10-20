@@ -75,7 +75,10 @@ class App extends Component {
           url={hhh}
         />
         <Header2 text={this.state.data.headers[3]}/>
-        <TextBlock1 text={this.state.data.textBlocks[3]}/>
+        <TextBlock1
+          href={'https://hungryhungryhippolyta.com/'}
+          text={this.state.data.textBlocks[3]}
+        />
 
         <Icon1
           alt={'Hippolyta Logo'}
@@ -83,7 +86,10 @@ class App extends Component {
           url={hippolyta}
         />
         <Header2 text={this.state.data.headers[4]}/>
-        <TextBlock1 text={this.state.data.textBlocks[4]}/>
+        <TextBlock1
+          href={'https://github.com/rserrano169/Hippolyta'}
+          text={this.state.data.textBlocks[4]}
+        />
 
         <Header1 text={this.state.data.headers[5]}/>
         <TextBlock text={this.state.data.textBlocks[5]}/>

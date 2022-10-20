@@ -6,10 +6,13 @@ class TextBlock1 extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      href: this.props.href,
       style: {
-        fontSize: 16,
-        paddingTop: 2,
-        textAlign: 'center',
+        div: {
+          fontSize: 16,
+          paddingTop: 2,
+          textAlign: 'center',
+        },
       },
       text: this.props.text,
     };
@@ -18,6 +21,7 @@ class TextBlock1 extends Component {
   render() {
     return(
       <TextBlock
+        href={this.state.href}
         style={this.state.style}
         text={this.state.text}
       />

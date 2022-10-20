@@ -67,6 +67,14 @@ class App extends Component {
             },
           },
         },
+        main: {
+          id: 'main',
+          style: {
+            height: '100%',
+            padding: 20,
+            width: '100%',
+          },
+        },
         personalProjects: {
           main: {
             header: {
@@ -126,11 +134,6 @@ class App extends Component {
           },
         },
       },
-      style: {
-        height: '100%',
-        padding: 20,
-        width: '100%',
-      },
     };
   }
 
@@ -139,8 +142,8 @@ class App extends Component {
     
     return (
       <div
-        id="main"
-        style={this.state.style}
+        id={section.main.id}
+        style={section.main.style}
       >
         <Icon
           alt={section.top.icon.alt}

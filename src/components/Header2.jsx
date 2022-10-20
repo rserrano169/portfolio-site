@@ -6,9 +6,12 @@ class Header2 extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      href: this.props.href,
       style: {
-        fontSize: 24,
-        paddingTop: 15,
+        div: {
+          fontSize: 24,
+          paddingTop: 15,
+        },
       },
       text: this.props.text,
     };
@@ -17,6 +20,7 @@ class Header2 extends Component {
   render() {
     return (
       <Header
+        href={this.state.href}
         style={this.state.style}
         text={this.state.text}
       />

@@ -74,7 +74,10 @@ class App extends Component {
           href={'https://hungryhungryhippolyta.com/'}
           url={hhh}
         />
-        <Header2 text={this.state.data.headers[3]}/>
+        <Header2
+          href={'https://hungryhungryhippolyta.com/'}
+          text={this.state.data.headers[3]}
+        />
         <TextBlock1
           href={'https://hungryhungryhippolyta.com/'}
           text={this.state.data.textBlocks[3]}
@@ -85,7 +88,10 @@ class App extends Component {
           href={'https://github.com/rserrano169/Hippolyta'}
           url={hippolyta}
         />
-        <Header2 text={this.state.data.headers[4]}/>
+        <Header2
+          href={'https://github.com/rserrano169/Hippolyta'}
+          text={this.state.data.headers[4]}
+        />
         <TextBlock1
           href={'https://github.com/rserrano169/Hippolyta'}
           text={this.state.data.textBlocks[4]}

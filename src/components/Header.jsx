@@ -6,17 +6,34 @@ class Header extends Component {
     super(props);
     this.state = _.merge({
       style: {
-        fontSize: 45,
-        margin: 'auto',
-        textAlign: 'center',
-        width: '50%',
+        div: {
+          fontSize: 45,
+          margin: 'auto',
+          textAlign: 'center',
+          width: '50%',
+        },
+        span: {
+          cursor: 'pointer',
+        },
       },
     }, this.props);
   }
 
+  handlePointerDown = () => {
+    window.open(this.state.href, '_blank');
+  }
+
   render() {
+    const innerHtml = this.state.href
+      ? <span
+          onPointerDown={this.handlePointerDown}
+          style={this.state.style.span}
+        >
+          {this.state.text}
+        </span>
+      : this.state.text;
     return (
-      <header style={this.state.style}>{this.state.text}</header>
+      <header style={this.state.style.div}>{innerHtml}</header>
     );
   }
 }

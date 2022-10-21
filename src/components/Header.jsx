@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import _ from 'lodash';
 
+const linkUnderlineColor = 'rgba(87,67,96,0.5)';
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,9 @@ class Header extends Component {
           width: '50%',
         },
         span: {
+          borderBottomColor: linkUnderlineColor,
+          borderBottomWidth: 1,
+          borderBottomStyle: 'solid',
           cursor: 'pointer',
         },
       },
@@ -23,10 +28,36 @@ class Header extends Component {
     window.open(this.state.href, '_blank');
   }
 
+  handlePointerEnter = () => {
+    this.setState((state) => {
+      return {...state,
+        style: {...state.style,
+          span: {...state.style.span,
+            borderBottomColor: '#B9983E',
+          },
+        },
+      };
+    });
+  }
+
+  handlePointerLeave = () => {
+    this.setState((state) => {
+      return {...state,
+        style: {...state.style,
+          span: {...state.style.span,
+            borderBottomColor: linkUnderlineColor,
+          },
+        },
+      };
+    });
+  }
+
   render() {
     const innerHtml = this.state.href
       ? <span
           onPointerDown={this.handlePointerDown}
+          onPointerEnter={this.handlePointerEnter}
+          onPointerLeave={this.handlePointerLeave}
           style={this.state.style.span}
         >
           {this.state.text}

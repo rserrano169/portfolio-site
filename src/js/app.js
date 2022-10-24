@@ -17,6 +17,7 @@ import TextBlock1 from '../components/TextBlock1.jsx';
 import headshot from '../assets/img/headshot.jpg';
 import hhh from '../assets/img/hippolyta-mouth-open-left.png';
 import hippolyta from '../assets/img/hippolyta_hippo.png';
+import hobby from '../assets/img/hobby_collage.jpg';
 import resume from "../assets/pdf/Resume_Raul_Serrano.pdf";
 import usma from '../assets/img/West_Point_collage.jpg';
 
@@ -59,10 +60,14 @@ class App extends Component {
             text: 'Culture',
           },
           hobby: {
+            img: {
+              alt: 'hobby collage',
+              url: hobby,
+            },
             textBlock: {
               style: {
                 div: {
-                  paddingTop: 40,
+                  paddingTop: 50,
                 },
               },
               text: 'In my free time I like to socialize with my diverse network of friends. We like to dance, game, have intense discussions, and even keep up with our marksmanship skills.',
@@ -215,6 +220,10 @@ class App extends Component {
         <TextBlock
           style={section.culture.hobby.textBlock.style}
           text={section.culture.hobby.textBlock.text}
+        />
+        <Img
+          alt={section.culture.hobby.img.alt}
+          url={section.culture.hobby.img.url}
         />
 
         <Header1 text={section.bottom.header.text}/>

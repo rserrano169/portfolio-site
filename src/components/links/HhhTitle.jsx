@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 import LinkText from './Text.jsx';
 
+import CONSTS from '../../js/const';
+
 class HhhTitle extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      href: 'https://hungryhungryhippolyta.com/',
+      href: CONSTS.url.hhh,
       text: 'Hungry Hungry Hippolyta',
     };
   }

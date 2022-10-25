@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import CONSTS from '../../js/const';
 import headshot from "../../assets/img/headshot.jpg";
 
 const $div = styled.div`
@@ -17,7 +18,7 @@ class Headshot extends Component {
 
     this.state = {
       alt: 'headshot',
-      href: 'https://github.com/rserrano169',
+      href: CONSTS.url.portfolio,
       target: '_blank',
       url: headshot,
     };

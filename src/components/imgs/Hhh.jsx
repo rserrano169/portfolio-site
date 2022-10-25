@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import ImgProject from './Project.jsx';
 
+import CONSTS from '../../js/const';
 import hhh from '../../assets/img/hippolyta-mouth-open-left.png';
 
 class Hhh extends Component {
@@ -10,7 +11,7 @@ class Hhh extends Component {
 
     this.state = {
       alt: 'Hungry Hungry Hippolyta',
-      href: 'https://hungryhungryhippolyta.com/',
+      href: CONSTS.url.hhh,
       url: hhh,
     };
   }

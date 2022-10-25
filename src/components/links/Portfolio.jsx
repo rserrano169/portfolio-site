@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 import LinkText from './Text.jsx';
 
+import CONSTS from '../../js/const';
+
 class Portfolio extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      href: 'https://github.com/rserrano169',
+      href: CONSTS.url.portfolio,
       text: 'Raul Serrano',
     };
   }

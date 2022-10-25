@@ -4,7 +4,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Component } from 'react';
 
-import Header from '../components/Header.jsx';
+import HeadingMain from '../components/headings/Main.jsx';
+import HeadingProject from '../components/headings/Project.jsx';
+import HeadingSection from '../components/headings/Section.jsx';
+import LinkHhhDescription from '../components/links/HhhDescription.jsx';
+import LinkHhhTitle from '../components/links/HhhTitle.jsx';
+import LinkPortfolio from '../components/links/Portfolio.jsx';
+import LinkResume from '../components/links/Resume.jsx';
+import ImgHeadshot from '../components/imgs/Headshot.jsx';
+import ImgHhh from '../components/imgs/Hhh.jsx';
+import ImgResume from '../components/imgs/Resume.jsx';
+import TextProject from '../components/texts/Project.jsx';
+import TextSection from '../components/texts/Section.jsx';
+
 import Header1 from "../components/Header1.jsx";
 import Header2 from "../components/Header2.jsx";
 import Icon from '../components/Icon.jsx';
@@ -161,82 +173,81 @@ class App extends Component {
         id={section.main.id}
         style={section.main.style}
       >
-        <Icon
-          alt={section.top.icon.alt}
-          href={section.top.href}
-          url={section.top.icon.url}
-        />
-        <Header
-          href={section.top.href}
-          text={section.top.header.text}
-        />
-        <TextBlock text={section.top.textBlock.text}/>
+        <ImgHeadshot />
+        <HeadingMain>
+          <LinkPortfolio />
+        </HeadingMain>
+        <TextSection>
+          {section.top.textBlock.text}
+        </TextSection>
 
-        <Header1
-          href={section.resume.header.href}
-          text={section.resume.header.text}
-        />
-        <Resume />
-        <TextBlock text={section.resume.textBlock.text}/>
+        <HeadingSection>
+          <LinkResume />
+        </HeadingSection>
+        <ImgResume />
+        <TextSection>
+          {section.resume.textBlock.text}
+        </TextSection>
 
-        <Header1 text={section.personalProjects.main.header.text}/>
-        <TextBlock text={section.personalProjects.main.textBlock.text}/>
+        <HeadingSection>
+          {section.personalProjects.main.header.text}
+        </HeadingSection>
+        <TextSection>
+          {section.personalProjects.main.textBlock.text}
+        </TextSection>
 
-        <Icon1
-          alt={section.personalProjects.hhh.icon.alt}
-          href={section.personalProjects.hhh.href}
-          url={section.personalProjects.hhh.icon.url}
-        />
-        <Header2
-          href={section.personalProjects.hhh.href}
-          text={section.personalProjects.hhh.header.text}
-        />
-        <TextBlock1
-          href={section.personalProjects.hhh.href}
-          text={section.personalProjects.hhh.textBlock.text}
-        />
+        <ImgHhh />
+        <HeadingProject>
+          <LinkHhhTitle />
+        </HeadingProject>
+        <TextProject>
+          <LinkHhhDescription />
+        </TextProject>
 
-        <Icon1
-          alt={section.personalProjects.hippolyta.icon.alt}
-          href={section.personalProjects.hippolyta.href}
-          url={section.personalProjects.hippolyta.icon.url}
-        />
-        <Header2
-          href={section.personalProjects.hippolyta.href}
-          text={section.personalProjects.hippolyta.header.text}
-        />
-        <TextBlock1
-          href={section.personalProjects.hippolyta.href}
-          text={section.personalProjects.hippolyta.textBlock.text}
-        />
 
-        <Header1 text={section.culture.header.text}/>
-        <TextBlock text={section.culture.usma.textBlock.text}/>
-        <Img
-          alt={section.culture.usma.img.alt}
-          url={section.culture.usma.img.url}
-        />
 
-        <TextBlock
-          style={section.culture.hobby.textBlock.style}
-          text={section.culture.hobby.textBlock.text}
-        />
-        <Img
-          alt={section.culture.hobby.img.alt}
-          url={section.culture.hobby.img.url}
-        />
+        {/*<Icon1*/}
+        {/*  alt={section.personalProjects.hippolyta.icon.alt}*/}
+        {/*  href={section.personalProjects.hippolyta.href}*/}
+        {/*  url={section.personalProjects.hippolyta.icon.url}*/}
+        {/*/>*/}
+        {/*<Header2*/}
+        {/*  href={section.personalProjects.hippolyta.href}*/}
+        {/*  text={section.personalProjects.hippolyta.header.text}*/}
+        {/*/>*/}
+        {/*<TextBlock1*/}
+        {/*  href={section.personalProjects.hippolyta.href}*/}
+        {/*  text={section.personalProjects.hippolyta.textBlock.text}*/}
+        {/*/>*/}
 
-        <Header1 text={section.bottom.header.text}/>
-        <TextBlock
-          href={section.bottom.email.textBlock.href}
-          style={section.bottom.email.textBlock.style}
-          text={section.bottom.email.textBlock.text}
-        />
-        <TextBlock
-          href={section.bottom.linkedIn.textBlock.href}
-          style={section.bottom.linkedIn.textBlock.style}
-          text={section.bottom.linkedIn.textBlock.text}
-        />
+        {/*<Header1 text={section.culture.header.text}/>*/}
+        {/*<TextBlock text={section.culture.usma.textBlock.text}/>*/}
+        {/*<Img*/}
+        {/*  alt={section.culture.usma.img.alt}*/}
+        {/*  url={section.culture.usma.img.url}*/}
+        {/*/>*/}
+
+        {/*<TextBlock*/}
+        {/*  style={section.culture.hobby.textBlock.style}*/}
+        {/*  text={section.culture.hobby.textBlock.text}*/}
+        {/*/>*/}
+        {/*<Img*/}
+        {/*  alt={section.culture.hobby.img.alt}*/}
+        {/*  url={section.culture.hobby.img.url}*/}
+        {/*/>*/}
+
+        {/*<Header1 text={section.bottom.header.text}/>*/}
+        {/*<TextBlock*/}
+        {/*  className={'tac isEmail'}*/}
+        {/*  href={section.bottom.email.textBlock.href}*/}
+        {/*  text={section.bottom.email.textBlock.text}*/}
+        {/*/>*/}
+        {/*<TextBlock*/}
+        {/*  className={'tac'}*/}
+        {/*  href={section.bottom.linkedIn.textBlock.href}*/}
+        {/*  // style={section.bottom.linkedIn.textBlock.style}*/}
+        {/*  text={section.bottom.linkedIn.textBlock.text}*/}
+        {/*/>*/}
       </div>
     );
   }

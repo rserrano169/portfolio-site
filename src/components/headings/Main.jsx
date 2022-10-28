@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $h1 = styled.h1`
+const StyledH1 = styled.h1`
   font-size: 45px;
   margin: auto;
   text-align: center;
@@ -18,9 +18,7 @@ class Main extends Component {
   }
 
   render() {
-    return (
-      <$h1>{this.state.children}</$h1>
-    );
+    return <StyledH1>{this.state.children}</StyledH1>;
   }
 }
 

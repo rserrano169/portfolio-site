@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $p = styled.p`
+const StyledP = styled.p`
   font-size: 22px;
   margin: auto;
   ${(props) => {
@@ -39,7 +39,7 @@ class Section extends Component {
   }
 
   render() {
-    return <$p type={this.state.type}>{this.state.children}</$p>;
+    return <StyledP type={this.state.type}>{this.state.children}</StyledP>;
   }
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $h3 = styled.h3`
+const StyledH3 = styled.h3`
   font-size: 24px;
   margin: auto;
   padding-top: 15px;
@@ -19,9 +19,7 @@ class Project extends Component {
   }
 
   render() {
-    return (
-      <$h3>{this.state.children}</$h3>
-    );
+    return <StyledH3>{this.state.children}</StyledH3>;
   }
 }
 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $h2 = styled.h2`
+const StyledH2 = styled.h2`
   font-size: 30px;
   margin: auto;
   padding-top: 70px;
@@ -19,7 +19,7 @@ class Section extends Component {
   }
 
   render() {
-    return <$h2>{this.state.children}</$h2>;
+    return <StyledH2>{this.state.children}</StyledH2>;
   }
 }
 

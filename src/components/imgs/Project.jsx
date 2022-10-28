@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $div = styled.div`
+const StyledDiv = styled.div`
   padding-top: 40px;
   text-align: center;
 `;
-const $img = styled.img`
+const StyledImg = styled.img`
   border-radius: 0;
   height: 120px;
   width: auto;
@@ -25,17 +25,17 @@ class Project extends Component {
 
   render() {
     return(
-      <$div>
+      <StyledDiv>
         <a
           href={this.state.href}
           target={this.state.target}
         >
-          <$img
+          <StyledImg
             alt={this.state.alt}
             src={this.state.url}
           />
         </a>
-      </$div>
+      </StyledDiv>
     );
   }
 }

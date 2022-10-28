@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const underlineColorHover = '#B9983E';
 const underlineColorUnvisited = 'rgba(87,67,96,0.5)';
 
-const $a = styled.a`
+const StyledA = styled.a`
   border-bottom-color: ${underlineColorUnvisited};
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -28,12 +28,12 @@ class Text extends Component {
 
   render() {
     return (
-      <$a
+      <StyledA
         href={this.state.href}
         target={this.state.target}
       >
         {this.state.text}
-      </$a>
+      </StyledA>
     );
   }
 }

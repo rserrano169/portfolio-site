@@ -13,10 +13,12 @@ class LinkedIn extends Component {
   }
 
   render() {
-    return <LinkText
-      href={this.state.href}
-      text={this.state.text}
-    />;
+    return (
+      <LinkText
+        href={this.state.href}
+        text={this.state.text}
+      />
+    );
   }
 }
 

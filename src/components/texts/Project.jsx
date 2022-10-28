@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $p = styled.p`
+const StyledP = styled.p`
   font-size: 16px;
   margin: auto;
   padding-top: 2px;
@@ -28,7 +28,7 @@ class Project extends Component {
   }
 
   render() {
-    return <$p>{this.state.children}</$p>;
+    return <StyledP>{this.state.children}</StyledP>;
   }
 }
 

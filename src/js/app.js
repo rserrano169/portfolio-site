@@ -1,5 +1,3 @@
-import "../styles/index.sass";
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Component } from 'react';
@@ -24,6 +22,8 @@ import ImgUsma from '../components/imgs/Usma.jsx';
 import ImgResume from '../components/imgs/Resume.jsx';
 import TextProject from '../components/texts/Project.jsx';
 import TextSection from '../components/texts/Section.jsx';
+
+import "../styles/index.sass";
 
 const StyledDiv = styled.div`
   height: 100%;

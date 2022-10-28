@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import CONSTS from '../../js/const';
-import headshot from "../../assets/img/headshot.jpg";
+import headshot from '../../assets/img/headshot.jpg';
 
-const $div = styled.div`
+const StyledDiv = styled.div`
   text-align: center;
 `;
-const $img = styled.img`
+const StyledImg = styled.img`
   border-radius: 50%;
   width: 200px;
 `;
@@ -26,17 +26,17 @@ class Headshot extends Component {
 
   render() {
     return (
-      <$div>
+      <StyledDiv>
         <a
           href={this.state.href}
           target={this.state.target}
         >
-          <$img
+          <StyledImg
             alt={this.state.alt}
             src={this.state.url}
           />
         </a>
-      </$div>
+      </StyledDiv>
     );
   }
 }

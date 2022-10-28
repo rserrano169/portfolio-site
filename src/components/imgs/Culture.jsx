@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const $div = styled.div`
+const StyledDiv = styled.div`
   padding-top: 15px;
   text-align: center;
 `;
-const $img = styled.img`
+const StyledImg = styled.img`
   width: 50%;
 `;
 
@@ -21,12 +21,12 @@ class Culture extends Component {
 
   render() {
     return (
-      <$div>
-        <$img
+      <StyledDiv>
+        <StyledImg
           alt={this.state.alt}
           src={this.state.url}
         />
-      </$div>
+      </StyledDiv>
     );
   }
 }

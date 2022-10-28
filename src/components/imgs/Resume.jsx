@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 import styled from 'styled-components';
 
-import resumePdf from "../../assets/pdf/Resume_Raul_Serrano.pdf";
-import resumePng from "../../assets/img/Resume_Raul_Serrano.png";
+import resumePdf from '../../assets/pdf/Resume_Raul_Serrano.pdf';
+import resumePng from '../../assets/img/Resume_Raul_Serrano.png';
 
-const $div = styled.div`
+const StyledDiv = styled.div`
   padding-top: 30px;
   margin: auto;
   text-align: center;
 `;
-const $img = styled.img`
+const StyledImg = styled.img`
   width: 50%;
 `;
 
@@ -26,18 +26,17 @@ class Resume extends Component {
 
   render() {
     return (
-      <$div>
+      <StyledDiv>
         <a
           href={this.state.href}
           target={this.state.target}
         >
-          <$img
+          <StyledImg
             alt={this.state.alt}
             src={this.state.url}
-          >
-          </$img>
+          />
         </a>
-      </$div>
+      </StyledDiv>
     );
   }
 }

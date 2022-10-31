@@ -20,6 +20,7 @@ import ImgHippolyta from '../components/imgs/Hippolyta.jsx';
 import ImgHobby from '../components/imgs/Hobby.jsx';
 import ImgUsma from '../components/imgs/Usma.jsx';
 import ImgResume from '../components/imgs/Resume.jsx';
+import TextBottom from '../components/texts/Bottom.jsx';
 import TextProject from '../components/texts/Project.jsx';
 import TextSection from '../components/texts/Section.jsx';
 
@@ -125,7 +126,7 @@ class App extends Component {
         </TextSection>
         <ImgUsma />
 
-        <TextSection type={section.culture.hobby.type}>
+        <TextSection isHobby>
           {section.culture.hobby.text}
         </TextSection>
         <ImgHobby />
@@ -133,12 +134,12 @@ class App extends Component {
         <HeadingSection>
           {section.bottom.heading}
         </HeadingSection>
-        <TextSection type={section.bottom.email.type}>
+        <TextBottom isFirst>
           <LinkEmail />
-        </TextSection>
-        <TextSection type={section.bottom.linkedIn.type}>
+        </TextBottom>
+        <TextBottom>
           <LinkLinkedIn />
-        </TextSection>
+        </TextBottom>
       </StyledDiv>
     );
   }

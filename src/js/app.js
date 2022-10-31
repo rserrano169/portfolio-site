@@ -1,6 +1,5 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom/client';
-import { Component } from 'react';
 import styled from 'styled-components';
 
 import HeadingMain from '../components/headings/Main.jsx';

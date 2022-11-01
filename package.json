@@ -4,7 +4,7 @@
   "description": "portfolio site",
   "main": "src/app.js",
   "scripts": {
-    "build": "npm install; webpack",
+    "build": "webpack",
     "build-dev": "webpack --mode development",
     "serve": "webpack serve"
   },

@@ -9,10 +9,10 @@ module.exports = (env) => {
       open: true,
       port: env.port || '3000',
       static: {
-        directory: path.join(__dirname, 'src/html'),
+        directory: path.join(__dirname, 'src'),
       },
     },
-    entry: './src/js/app.js',
+    entry: './src/app.js',
     mode: 'development',
     module: {
       rules: [

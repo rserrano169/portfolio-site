@@ -2,7 +2,7 @@
   "name": "portfolio_site",
   "version": "1.0.0",
   "description": "portfolio site",
-  "main": "src/js/app.js",
+  "main": "src/app.js",
   "scripts": {
     "build-dev": "webpack --mode development",
     "serve": "webpack serve"

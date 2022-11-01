@@ -40,9 +40,9 @@ module.exports = (env) => {
       ],
     },
     output: {
-      // clean: true,
+      clean: true,
       filename: 'app.bundle.js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'dist/build'),
     },
   };
 };

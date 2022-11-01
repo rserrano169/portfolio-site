@@ -13,7 +13,7 @@ module.exports = (env) => {
       },
     },
     entry: './src/app.js',
-    mode: 'development',
+    // mode: 'development',
     module: {
       rules: [
         {

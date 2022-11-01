@@ -7,6 +7,15 @@ const StyledH3 = styled.h3`
   padding-top: 15px;
   text-align: center;
   width: 50%;
+
+  @media (max-width: 768px) {
+    font-size: 21px;
+    width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 17px;
+  }
 `;
 
 class Project extends Component {

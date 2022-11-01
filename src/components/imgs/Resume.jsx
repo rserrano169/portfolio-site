@@ -8,9 +8,21 @@ const StyledDiv = styled.div`
   padding-top: 30px;
   margin: auto;
   text-align: center;
+  
+  @media (max-width: 768px) {
+    padding-top: 20px;
+  }
+  
+  @media (max-width: 375px) {
+    padding-top: 10px;
+  }
 `;
 const StyledImg = styled.img`
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 class Resume extends Component {

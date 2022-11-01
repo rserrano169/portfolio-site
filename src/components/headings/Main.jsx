@@ -6,6 +6,15 @@ const StyledH1 = styled.h1`
   margin: auto;
   text-align: center;
   width: 50%;
+
+  @media (max-width: 768px) {
+    font-size: 38px;
+    width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 26px;
+  }
 `;
 
 class Main extends Component {

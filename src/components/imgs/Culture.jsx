@@ -7,6 +7,10 @@ const StyledDiv = styled.div`
 `;
 const StyledImg = styled.img`
   width: 50%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 class Culture extends Component {

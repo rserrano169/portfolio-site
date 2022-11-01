@@ -120,12 +120,12 @@ class App extends Component {
           {section.culture.heading}
         </HeadingSection>
 
-        <TextSection>
+        <TextSection isFirst>
           {section.culture.usma.text}
         </TextSection>
         <ImgUsma />
 
-        <TextSection isHobby>
+        <TextSection>
           {section.culture.hobby.text}
         </TextSection>
         <ImgHobby />

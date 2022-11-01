@@ -9,6 +9,14 @@ const StyledImg = styled.img`
   border-radius: 0;
   height: 120px;
   width: auto;
+  
+  @media(max-width: 768px) {
+    height: 100px;
+  }
+  
+  @media(max-width: 375px) {
+    height: 80px;
+  }
 `;
 
 class Project extends Component {

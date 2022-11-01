@@ -7,6 +7,15 @@ const StyledH2 = styled.h2`
   padding-top: 70px;
   text-align: center;
   width: 50%;
+
+  @media (max-width: 768px) {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  @media (max-width: 375px) {
+    font-size: 20px;
+  }
 `;
 
 class Section extends Component {

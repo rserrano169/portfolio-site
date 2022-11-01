@@ -10,6 +10,14 @@ const StyledDiv = styled.div`
 const StyledImg = styled.img`
   border-radius: 50%;
   width: 200px;
+
+  @media (max-width: 768px) {
+    width: 175px;
+  }
+
+  @media (max-width: 375px) {
+    width: 125px;
+  }
 `;
 
 class Headshot extends Component {
